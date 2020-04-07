@@ -1,0 +1,120 @@
+/*header*/
+h1 {
+	color: blue;
+	background-color: white;
+}
+
+h2 {
+	color: red;
+	background-color: yellow;
+}
+
+h3 {
+	color: yellow;
+	background-color: red;
+}
+
+/*flex container*/
+
+.flex-container {
+	display: flex;
+}
+
+.flex-item {
+	flex: auto;
+	border: 1px solid;
+	margin: .5em;
+	padding: .5em;
+	background: #ffebe6;
+}
+
+p.flex-item {
+	font-weight: bold;
+	text-align: center;
+}
+
+.flex-item:nth-of-type(2) {
+	background: #fdfcf3;
+}
+
+.flex-item:nth-of-type(3) {
+	background: #ebf5d7;
+}
+
+.flex-item:nth-of-type(4) {
+	background: #e6f2f7;
+}
+
+.flex-item:nth-of-type(5) {
+	background: hsla(277, 53%, 73%, 0.3);
+}
+
+/*button*/
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* Rounded Corners*/
+
+#rcorners1 {
+  border-radius: 25px;
+  background: #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners2 {
+  border-radius: 25px;
+  border: 2px solid #73AD21;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
+
+#rcorners3 {
+  border-radius: 25px;
+  background: url(paper.gif);
+  background-position: left top;
+  background-repeat: repeat;
+  padding: 20px; 
+  width: 200px;
+  height: 150px;  
+}
